@@ -3,14 +3,15 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    extend: {},
-    colors:{
+    extend: {    colors:{
       primary : '#101218',
       secondary : '#E55204'
-    }
+    }},
+
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin'),],
 }
 

@@ -1,9 +1,13 @@
+import NavBar from "./components/layouts/Navbar";
+import Home from "./pages/Home";
 function App() {
 
 
   return (
     <>
-      <h5 className="text-secondary">Hello</h5>
+      <NavBar/>
+      <Home/>
+     
     </>
   )
 }

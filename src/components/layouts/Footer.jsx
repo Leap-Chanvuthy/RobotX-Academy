@@ -59,9 +59,9 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="mt-10"/>
-            <div className="flex justify-between items-center my-10">
-                <p>Copyrigt © 2024 RobotX Academy | Design with ❤️ by Sou Seangly</p>
-                <p>Terms of Use | Privay Policy</p>
+            <div className="flex flex-col lg:md:flex-row justify-between  gap-5 items-center my-10">
+                <p className="text-sm">Copyrigt © 2024 RobotX Academy</p>
+                <p className="text-sm">Terms of Use | Privay Policy</p>
             </div>
         </div>
      );

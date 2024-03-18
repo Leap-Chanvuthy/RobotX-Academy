@@ -58,7 +58,7 @@ const About = () => {
             <h1 className="text-5xl font-bold mt-2">Empowering Young Minds through Robotic Education</h1>            
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6  justify-items-center mt-10">
                 {academy && academy.map((a) => (
-                    <div>
+                    <div key={a.id}>
                     <hr className="my-10" />
                         <div className="flex flex-col lg:md:flex-row justify-start items-start gap-7 ">
                             <img src={a.image} className="w-[92px] h-[92px]" />
@@ -73,6 +73,16 @@ const About = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <hr className="mt-10"/>
+            <div>
+                <div className="flex flex-col lg:md:flex-row justify-between items-center gap-10 mt-10">
+                    <div className="w-full text-white flex justify-center lg:md:justify-start ">
+                        <h5 className="flex justify-center items-center text-md font-medium text-center w-[182px] h-[59px] bg-black ">More About Us</h5>
+                    </div>
+                    <p className="text-center">RobotX Academy ignites a passion for robotics and STEM in children aged 8–58. Using playful learning with exciting programs like IoT, Plug-N-Play robots, and coding, they nurture curiosity, problem-solving, and teamwork skills.</p>
+                </div>
+                <img className="w-full h-[361px] object-cover mt-10" src="https://guitartpartners.com/wp-content/uploads/2023/04/inside.story_.5.6.articleImage.png" alt="" />
             </div>
         </div>
      );

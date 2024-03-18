@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
                 <hr className="mt-10"/>
                 <div className="flex flex-col lg:md:flex-row justify-between  gap-5 items-center my-10">
-                    <p className="text-sm">Copyrigt © 2024 RobotX Academy</p>
+                    <p className="text-sm">Copyright © 2024 RobotX Academy</p>
                     <p className="text-sm">Terms of Use | Privay Policy</p>
                 </div>
             </div>

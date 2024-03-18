@@ -55,7 +55,7 @@ const About = () => {
     return ( 
         <div className="mx-10 mt-[50px] ">
             <h2 className="uppercase text-sm font-bold text-secondary">About RobotX Academy</h2>
-            <h1 className="text-5xl font-bold mt-2">Empowering Young Minds through Robotic Education</h1>            
+            <h1 className="text-3xl font-bold mt-2">Empowering Young Minds through Robotic Education</h1>            
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6  justify-items-center mt-10">
                 {academy && academy.map((a) => (
                     <div key={a.id}>

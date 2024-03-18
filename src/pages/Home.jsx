@@ -44,7 +44,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* right side */}
-                <div className="flex flex-row flex-col gap-6">
+                <div className="flex flex-col gap-6">
                     <div className="w-[229px] h-[125px] bg-black flex flex-col items-center justify-center">
                         <div className="flex justify-center gap-2">
                             <h3 className="text-white font-bold text-xl">4.8</h3>

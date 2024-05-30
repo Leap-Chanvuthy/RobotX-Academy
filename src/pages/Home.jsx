@@ -1,6 +1,7 @@
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 
 
@@ -8,7 +9,7 @@ import { TbWorld } from "react-icons/tb";
 
 const Home = () => {
     return ( 
-        <div className=" mt-10 grid sm:grid-cols-2 grid-cols-1 mx-10 justify-items-center gap-6">
+        <motion.div className=" mt-10 grid sm:grid-cols-2 grid-cols-1 mx-10 justify-items-center gap-6">
             {/* hero */}
             <div className=" flex flex-col gap-10 py-4 ">
                 <p className="text-secondary uppercase font-bold">Robotx Academy - Robotic Course for Kids</p>
@@ -71,7 +72,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
      );
 }
 export default Home;

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import WhyUs from "./pages/WhyUs";
 import Courses from "./pages/Courses";
+import Programs from "./pages/Programs";
 
 const App = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -47,6 +48,7 @@ const App = () => {
                 <About />
                 <WhyUs />
                 <Courses/>
+                <Programs />
                 <Footer />
             </motion.div>
         </>

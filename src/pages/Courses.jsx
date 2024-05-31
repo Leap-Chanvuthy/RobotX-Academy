@@ -95,7 +95,6 @@ const Courses = () => {
     ];
 
     const [courses , setCourses] = useState(curriculums);
-    console.log(courses);
 
     return ( 
         <div className="mt-10 w-full ">
@@ -110,7 +109,7 @@ const Courses = () => {
 
             <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-3 mt-16 mx-5 lg:md:mx-20">
                 {courses && courses.map((course) =>(
-                <div className="p-4  bg-gray-100 shadow-sm flex flex-col justify-center items-center gap-2">
+                <div className="p-4  bg-gray-100 shadow-sm flex flex-col justify-center items-center gap-2" key={course.id}>
                     <img className="w-[210px] h-[210px] object-cover" src={course.image_url} alt="" />
                     <div className="flex justify-start items-center gap-3">
                         <FaStar className="text-yellow-400"/>
@@ -118,7 +117,7 @@ const Courses = () => {
                     </div>
                     <p className="text-xs">{course.age} • {course.session_hour}</p>
                     <div className="bg-secondary text-white px-4 py-2">
-                        $149.49
+                       ${course.price}
                     </div>
                 </div>
                 )) }
